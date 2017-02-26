@@ -9,14 +9,15 @@ export default class Header extends React.Component {
 
     handleChange(e){
         console.log("DEBUG REACT");
-        //this.props.changeThisName(e.target.value);
+        const title = e.target.value;
+        this.props.changeTitle(title);
     }
     render(){
         console.log(this.props);
         return(
             <div>
                 <h1>The Header! </h1>
-                <input onChange={this.handleChange.bind(this)} />
+                <input value={this.props.title} onChange={this.handleChange.bind(this)} />
             </div>
         );
     }
