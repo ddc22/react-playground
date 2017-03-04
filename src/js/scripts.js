@@ -16,7 +16,7 @@ const app = document.getElementById('app');
 ReactDOM.render(
     <Router history={hashHistory}>
         <Route path="/" component={Layout}>
-            <Route path="archived" component={Archived}></Route>
+            <Route path="archived/:article" component={Archived}></Route>
             <Route path="featured" component={Featured}></Route>
             <Route path="settings" component={Settings}></Route>
         </Route>
