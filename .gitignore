@@ -1,1 +1,5 @@
 node_modules/
+src/scripts.min.js
+nohup.out
+npm-debug.log
+
