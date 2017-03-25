@@ -13,10 +13,12 @@ import Settings from "./pages/Settings";
 
 const app = document.getElementById('app');
 
+// Can make route optionsal using parans 
+// Query params are enabled by default you have to just extract them using this.props
 ReactDOM.render(
     <Router history={hashHistory}>
         <Route path="/" component={Layout}>
-            <Route path="archived/:article" component={Archived}></Route>
+            <Route path="archived/(:article)" component={Archived}></Route>
             <Route path="featured" component={Featured}></Route>
             <Route path="settings" component={Settings}></Route>
         </Route>
